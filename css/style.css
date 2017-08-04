@@ -48,11 +48,15 @@ body {
 	margin: 40px 0;
 }
 
+#profession {
+	font-weight: 700;
+}
+
 #summary {
 	color: #525b4c;
 	font-size: 20px;
 	font-weight: 300;
-	line-height: 32px;
+	line-height: 33px;
 	margin-top: 5%;
 }
 
@@ -61,6 +65,21 @@ body {
 	height: 60%;
 	margin: 50px auto 70px auto;
 	width: 60%;
+}
+
+#education {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #ffffff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#education .sectionTitle {
+	
 }
 
 .text-vertical-center {
@@ -216,19 +235,6 @@ hr.small {
     margin-bottom: 30px;
 }
 
-/* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
 
 /* Portfolio */
 
