@@ -132,7 +132,6 @@ body {
 	display: table;
 	width: 100%;
 	height: 400px;
-	color: #ffffff;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -146,12 +145,30 @@ body {
 
 #education .logo {
 	margin: 50px 0 20px 0;
-	height: 65%;
-	width: 65%;
+	height: 75%;
+	width: 75%;
+}
+
+#education .heading, #education .description {
+	color: black;
+}
+
+#education .heading {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2em;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+
+#education .description {
+	color: dimgrey;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-bottom: 2em;
 }
 
 #portfolio {
-	
+	background-color: #337ab7;
 }
 
 footer {
@@ -294,12 +311,8 @@ hr.small {
    margin: 5px 5px 0 0;
 }
 
-/* Header */
 
-
-/* About */
-
-#about {
+section {
 	padding-top: 2%;
 	padding-bottom: 8%;
 }
@@ -307,17 +320,6 @@ hr.small {
 #skills {
 	padding: 35px 0;
 }
-
-/* Services */
-
-.services {
-    padding: 50px 0;
-}
-
-.service-item {
-    margin-bottom: 30px;
-}
-
 
 /* Portfolio */
 
