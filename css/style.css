@@ -48,6 +48,10 @@ body {
 	margin: 40px 0 25px 0;
 }
 
+.sectionTitle .skills {
+	/*background-color: black;*/
+}
+
 #profession {
 	font-weight: 700;
 }
@@ -60,10 +64,14 @@ body {
 	margin-top: 5%;
 }
 
+#italic {
+	font-style: italic;
+}
+
 #headshot {
 	display: block;
 	height: 60%;
-	margin: 50px auto 70px auto;
+	margin: auto;
 	width: 60%;
 }
 
@@ -72,7 +80,11 @@ body {
 	background: -o-linear-gradient(to right, rgba(33,193,194,1), rgba(54,185,232,1));
 	background: -moz-linear-gradient(to right, rgba(33,193,194,1), rgba(54,185,232,1));
 	background: linear-gradient(to right, #BE93C5, #7BC6CC);
-	padding: 50px 0;
+	padding-bottom: 50px;
+}
+
+.skill-items {
+	margin: 30px 0 50px 20px;
 }
 
 .skillIcon {
@@ -86,6 +98,7 @@ body {
 	-ms-transition: color 1s ease;
 	-o-transition: color 1s ease;
 }
+
 
 .icon-unity:hover {
 	color: white;
@@ -139,6 +152,13 @@ body {
 
 #portfolio {
 	
+}
+
+footer {
+	background: -webkit-linear-gradient(to right, #BE93C5, #7BC6CC);
+	background: -o-linear-gradient(to right, rgba(33,193,194,1), rgba(54,185,232,1));
+	background: -moz-linear-gradient(to right, rgba(33,193,194,1), rgba(54,185,232,1));
+	background: linear-gradient(to right, #BE93C5, #7BC6CC);
 }
 
 .text-vertical-center {
@@ -271,7 +291,7 @@ hr.small {
 }
 
 .toggle {
-    margin: 5px 5px 0 0;
+   margin: 5px 5px 0 0;
 }
 
 /* Header */
@@ -279,10 +299,14 @@ hr.small {
 
 /* About */
 
-.about {
-	margin: 30px 0;
+#about {
+	padding-top: 2%;
+	padding-bottom: 8%;
 }
 
+#skills {
+	padding: 35px 0;
+}
 
 /* Services */
 
