@@ -16,15 +16,15 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-#top {
+header {
 	position: relative;
 }
 
-#top video{
+header video{
 	width: 100%;
 }
 
-#top .container {
+header .container {
 	position: absolute;
 	top: 200px;
 	width: 100%;
@@ -33,26 +33,86 @@ body {
 	margin: 0 auto;
 }
 
-#top h1 {
+header h1 {
 	color: white;
 	font-size: 3.7em;
   font-weight: 500;
-	text-transform: uppercase;
+}
+
+header #subject {
+	display: inline-block;
+}
+
+#blinker {
+    width: 5px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 2px;
+    background-color: none;
+    -webkit-animation-name: blink; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: .9s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blink; /* Mozilla */
+    -moz-animation-duration: .9s; 
+    -moz-animation-iteration-count: infinite;
+    animation-name: blink;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes blink {
+    from {background-color: black;}
+    to {background-color: white;}
+}
+
+/* Mozilla */
+@-moz-keyframes blink {
+    from {background-color: black;}
+    to {background-color: white;}
+}
+
+/* Standard syntax */
+@keyframes blink {
+    from {background-color: black;}
+    to {background-color: white;}
+}
+
+.invisible {
+    opacity: 0.0;   
 }
 
 #welcome {
-	background-color: rgba(7, 8, 9, 0.42);
+	/*background-color: rgba(7, 8, 9, 0.42);*/
+	padding: 10px;
+}
+
+#name-animation {
+	display: inline-block;
+	font-family: 'Questrial', sans-serif;
+	letter-spacing: 3px;
+	font-weight: 200;
+}
+
+#main-rule {
+	width: 15%;
+}
+
+#greeting {
+	display: inline-block;
 }
 
 .sectionTitle {
 	margin: 40px 0 25px 0;
 }
 
-.sectionTitle .skills {
-	/*background-color: black;*/
+#name {
+	font-size: 1.8em;
 }
 
 #profession {
+	font-size: 1.5em;
 	font-weight: 700;
 }
 
@@ -76,10 +136,9 @@ body {
 }
 
 #skills {
-	background: -webkit-linear-gradient(to right, #BE93C5, #7BC6CC);
-	background: -o-linear-gradient(to right, rgba(33,193,194,1), rgba(54,185,232,1));
-	background: -moz-linear-gradient(to right, rgba(33,193,194,1), rgba(54,185,232,1));
-	background: linear-gradient(to right, #BE93C5, #7BC6CC);
+	background: #3A1C71;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	padding-bottom: 50px;
 }
 
@@ -155,9 +214,10 @@ body {
 
 #education .heading {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 2em;
+	font-size: 1.8em;
 	font-weight: 900;
 	letter-spacing: 2px;
+	margin-bottom: .7em;
 }
 
 #education .description {
@@ -172,10 +232,9 @@ body {
 }
 
 footer {
-	background: -webkit-linear-gradient(to right, #BE93C5, #7BC6CC);
-	background: -o-linear-gradient(to right, rgba(33,193,194,1), rgba(54,185,232,1));
-	background: -moz-linear-gradient(to right, rgba(33,193,194,1), rgba(54,185,232,1));
-	background: linear-gradient(to right, #BE93C5, #7BC6CC);
+	background: #3A1C71;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); 
 }
 
 .text-vertical-center {
